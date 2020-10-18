@@ -36,7 +36,7 @@ export const deleteUser = (req, res) => {
 
     res.send(`User with the id ${id} deleted from the database.`)
 }
-// Så vi kan 
+// Så vi kan opdatere useren
 export const updateUser = (req,res) => {
     const {id} = req.params;
     const {firstName, lastName, age} = req.body;
