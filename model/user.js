@@ -31,3 +31,8 @@ class paymentUser extends normalUser{
 export let user1 = new normalUser("Jens", "Hansen", "25", "JensHansen99", "lagkage123", ["Pizza", "Jumping", "Fodbold"])
 export let user2 = new paymentUser("Kia", "Larsen", "25", "KiaLarsen97", "drømmekage123", ["Pizza", "Dans", "Netflix"], "studentermedhjælper", "123456", image1)
 
+
+const match = (user1,user2) => {
+    return user1.interests.some(r => user2.interests.includes(r));
+ };
+
